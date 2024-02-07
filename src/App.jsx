@@ -3,6 +3,8 @@ import { ES_6 } from "./JavaScript/ES_6";
 import { Counter } from "./React/Counter";
 import { EmployeeCard } from "./React/EmployeeCard";
 import { Fruits } from "./React/Fruits";
+import { Hooks } from "./React/Hooks";
+import { Inputs } from "./React/Inputs";
 import { FilterableProductTable } from "./React/Mockup";
 import { Product } from "./React/Product";
 import { Sum } from "./React/Sum";
@@ -24,7 +26,9 @@ function App() {
       <Product />
       <Fruits />
       <Counter /> */}
-      <FilterableProductTable products={PRODUCTS} />
+      {/* <FilterableProductTable products={PRODUCTS} /> */}
+      {/* <Hooks /> */}
+      <Inputs />
     </>
   );
 }
