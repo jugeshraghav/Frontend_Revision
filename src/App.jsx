@@ -14,6 +14,7 @@ import { Home } from "./Router/Home";
 import { Products } from "./Router/Products";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { ProductDetail } from "./Router/productDetail";
+import { Cart } from "./Context/Cart";
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
   { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
@@ -65,13 +66,19 @@ function App() {
         </NavLink>
         ||
         <NavLink style={getStyle} to="/products">
-          Products
+          Products ||
+        </NavLink>
+        <NavLink style={getStyle} to="/cart">
+          Cart
         </NavLink>
       </nav>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+      </Routes> */}
+      <Routes>
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );

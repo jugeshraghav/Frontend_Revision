@@ -1,3 +1,12 @@
+import { useContext } from "react";
+import { MyContext } from "../main";
+
 export const Home = () => {
-  return <>Home</>;
+  const { items } = useContext(MyContext);
+  return (
+    <>
+      Home
+      <h1>Items : {items}</h1>
+    </>
+  );
 };
