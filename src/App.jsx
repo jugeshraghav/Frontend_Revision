@@ -15,6 +15,7 @@ import { Products } from "./Router/Products";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import { ProductDetail } from "./Router/productDetail";
 import { Cart } from "./Context/Cart";
+import { Reducer } from "./reducer/Reducer";
 const PRODUCTS = [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
   { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
@@ -60,7 +61,7 @@ function App() {
       {/* <Hooks /> */}
       {/* <Inputs /> */}
       {/* <Functions_props todos={todosDB} toggleTodo={toggleTodo} /> */}
-      <nav>
+      {/* <nav>
         <NavLink style={getStyle} to="/">
           Home
         </NavLink>
@@ -71,15 +72,16 @@ function App() {
         <NavLink style={getStyle} to="/cart">
           Cart
         </NavLink>
-      </nav>
+      </nav> */}
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
       </Routes> */}
-      <Routes>
+      {/* <Routes>
         <Route path="/cart" element={<Cart />} />
-      </Routes>
+      </Routes> */}
+      <Reducer />
     </>
   );
 }
