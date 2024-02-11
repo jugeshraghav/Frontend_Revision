@@ -81,7 +81,8 @@ function App() {
       {/* <Routes>
         <Route path="/cart" element={<Cart />} />
       </Routes> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <Counter />
     </>
   );
 }
