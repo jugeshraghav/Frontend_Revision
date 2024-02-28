@@ -246,3 +246,101 @@ const person4 = { name: "John", age: 25, occupation: "Software Engineer" };
 const person5 = { name: "Jane", age: 45, occupation: "Data Analyst" };
 // console.log(personInfo(person4)); // Expected output: "John is 25 years old."
 // console.log(personInfo(person5)); // Expected output: "Jane is 45 years old."
+
+//set 3
+//1
+// Your ES6 code here
+const formatArray = (arr) =>
+  `The array has ${arr.length} items, the first item is ${
+    arr[0]
+  } and the last item is ${arr[arr.length - 1]}`;
+const items = ["apple", "banana", "orange"];
+const message = formatArray(items);
+// console.log(message);
+// The array has 3 items, and the first item is "apple", and the last item is "orange".
+
+//2
+// Your ES6 code here
+const formatProduct = (obj) =>
+  `${obj.name} costs INR ${obj.price} and is ${
+    obj.inStock ? "in stock" : "not in stock"
+  }`;
+const product2 = {
+  name: "Socks",
+  price: 249,
+  inStock: true,
+};
+
+const message2 = formatProduct(product2);
+// console.log(message2);
+// Socks costs INR 249 and is in stock.
+
+//3
+// Your ES6 code here
+const findPerson = (arr, name) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name === name) return arr[i];
+  }
+  return undefined;
+};
+// console.log(
+//   findPerson(
+//     [
+//       { name: "Amay", age: 25 },
+//       { name: "Akhil", age: 25 },
+//     ],
+//     "Akhil"
+//   )
+// );
+
+//4
+// Your ES6 code here
+const pickFirstAndSecond = (arr) => {
+  const [first, second] = arr;
+  return { first, second };
+};
+// console.log(pickFirstAndSecond(["orange", "banana", "apple"]));
+// {first: 'orange', second: 'banana'}
+
+// console.log(pickFirstAndSecond(["red", "blue", "green"]));
+// {first: 'red', second: 'blue'}
+
+//
+function startsWithA(str) {
+  if (str.charAt(0) === "A") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// const startsWithA = (str) => str.charAt(0) === "A";
+// console.log(startsWithA("Akshita"));
+// true
+// console.log(startsWithA("Jeena"));
+// false
+
+//6
+// Your ES6 code here
+const printFirstCharacter = (arr) => arr[0];
+console.log(printFirstCharacter([1, 2, 3, 5, 8]));
+// 1
+
+//7
+// Your ES6 code here
+const printLastFive = (arr) => {
+  let i = arr.length - 5;
+  const newArr = [];
+  for (i; i < arr.length; i++) {
+    newArr.push(arr[i]);
+  }
+  return newArr;
+};
+// console.log(printLastFive([0, 1, 1, 2, 3, 5, 8]));
+// [1, 2, 3, 5, 8]
+
+//8
+// Your ES6 code here
+const printSecondCharacter = (arr) => arr[1] * 20;
+console.log(printSecondCharacter([1, 2, 3, 5, 8]));
+// 40
