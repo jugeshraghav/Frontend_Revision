@@ -342,5 +342,5 @@ const printLastFive = (arr) => {
 //8
 // Your ES6 code here
 const printSecondCharacter = (arr) => arr[1] * 20;
-console.log(printSecondCharacter([1, 2, 3, 5, 8]));
+// console.log(printSecondCharacter([1, 2, 3, 5, 8]));
 // 40
